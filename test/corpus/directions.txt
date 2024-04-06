@@ -1,0 +1,124 @@
+==================
+Direction down
+==================
+flowchart-diagram
+
+// set direction
+direction down
+
+// first node
+Node1 [shape: oval]
+---
+(source_file
+  (heading)
+  (comment)
+  (stmt_list
+    (stmt
+     (directive_stmt
+      (direction)))
+    (comment)
+    (stmt
+      (node_stmt
+        (node
+          (identifier)
+          (node_properties
+            (property
+              (shape))
+          )
+        )
+      ))
+  )
+)
+==================
+Direction up
+==================
+flowchart-diagram
+
+// set direction
+direction up
+
+// first node
+Node1 [shape: oval]
+---
+(source_file
+  (heading)
+  (comment)
+  (stmt_list
+    (stmt
+     (directive_stmt
+      (direction)))
+    (comment)
+    (stmt
+      (node_stmt
+        (node
+          (identifier)
+          (node_properties
+            (property
+              (shape))
+          )
+        )
+      ))
+  )
+)
+==================
+Direction left
+==================
+flowchart-diagram
+
+// set direction
+direction left
+
+// first node
+Node1 [shape: oval]
+---
+(source_file
+  (heading)
+  (comment)
+  (stmt_list
+    (stmt
+     (directive_stmt
+      (direction)))
+    (comment)
+    (stmt
+      (node_stmt
+        (node
+          (identifier)
+          (node_properties
+            (property
+              (shape))
+          )
+        )
+      ))
+  )
+)
+==================
+Direction right
+==================
+flowchart-diagram
+
+// set direction
+direction right
+
+// first node
+Node1 [shape: oval]
+---
+(source_file
+  (heading)
+  (comment)
+  (stmt_list
+    (stmt
+     (directive_stmt
+      (direction)))
+    (comment)
+    (stmt
+      (node_stmt
+        (node
+          (identifier)
+          (node_properties
+            (property
+              (shape))
+          )
+        )
+      ))
+  )
+)

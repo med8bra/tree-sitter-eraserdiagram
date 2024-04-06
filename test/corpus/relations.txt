@@ -1,0 +1,27 @@
+==================
+Relations
+==================
+flowchart-diagram
+
+// set direction
+direction down
+
+// first relation
+Node1 > Node2
+---
+(source_file
+  (heading)
+  (comment)
+  (stmt_list
+    (stmt
+     (directive_stmt
+      (direction)))
+    (comment)
+    (stmt
+      (relation_stmt
+        (relation_target (node (identifier)))
+        (relation_connector)
+        (relation_target (node (identifier)))
+      ))
+  )
+)

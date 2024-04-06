@@ -1,0 +1,61 @@
+{
+  "name": "tree-sitter-eraserdiagram",
+  "version": "0.0.1",
+  "description": "Eraser diagrams grammar for tree-sitter",
+  "main": "bindings/node",
+  "types": "bindings/node",
+  "scripts": {
+    "test": "tree-sitter test",
+    "install": "node-gyp-build",
+    "prebuildify": "prebuildify --napi --strip"
+  },
+  "keywords": [
+    "eraser",
+    "diagram",
+    "tree-sitter",
+    "grammar",
+    "parser"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/med8bra/tree-sitter-eraserdiagram.git"
+  },
+  "license": "MIT",
+  "files": [
+    "grammar.js",
+    "binding.gyp",
+    "prebuilds/**",
+    "bindings/node/*",
+    "queries/*",
+    "src/**"
+  ],
+  "author": "github.com/med8bra",
+  "dependencies": {
+    "node-addon-api": "^7.1.0",
+    "node-gyp-build": "^4.8.0"
+  },
+  "peerDependencies": {
+    "tree-sitter": "^0.21.0"
+  },
+  "peerDependenciesMeta": {
+    "tree_sitter": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.22.2",
+    "prebuildify": "^6.0.0"
+  },
+  "tree-sitter": [
+    {
+      "scope": "source.eraserdiagram",
+      "file-types": [
+        "eraserdiagram"
+      ]
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/med8bra/tree-sitter-eraserdiagram/issues"
+  },
+  "homepage": "https://github.com/med8bra/tree-sitter-eraserdiagram#readme"
+}

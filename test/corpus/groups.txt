@@ -1,0 +1,181 @@
+==================
+Empty Group
+==================
+flowchart-diagram
+
+// set direction
+direction up
+
+// first group
+Group1 {}
+Group2 {
+
+}
+
+---
+(source_file
+  (heading)
+  (comment)
+  (stmt_list
+    (stmt
+     (directive_stmt
+      (direction)))
+    (comment)
+    (stmt
+      (group_stmt
+        (identifier)
+        (group_block)
+      ))
+    (stmt
+      (group_stmt
+        (identifier)
+        (group_block)
+      ))
+  )
+)
+==================
+Group properties
+==================
+flowchart-diagram
+
+// set direction
+direction up
+
+// first group
+Group1 [color: red, label: simpleGroup] {}
+
+---
+(source_file
+  (heading)
+  (comment)
+  (stmt_list
+    (stmt
+     (directive_stmt
+      (direction)))
+    (comment)
+    (stmt
+      (group_stmt
+        (identifier)
+        (group_properties
+          (node_properties
+            (property (color (color_name)))
+            (property (identifier))
+          ))
+        (group_block)
+      ))
+  )
+)
+==================
+Group nested
+==================
+flowchart-diagram
+
+// set direction
+direction up
+
+// first group
+Group1 {
+  InnerGroup {
+      Node1
+    }
+}
+
+---
+(source_file
+  (heading)
+  (comment)
+  (stmt_list
+    (stmt
+     (directive_stmt
+      (direction)))
+    (comment)
+    (stmt
+      (group_stmt
+        (identifier)
+        (group_block
+          (group_item
+            (group_stmt
+              (identifier)
+              (group_block
+                (group_item
+                  (node (identifier))
+                )
+              )
+            )
+          )
+        )
+      ))
+  )
+)
+==================
+Group with nodes
+==================
+flowchart-diagram
+
+// set direction
+direction up
+
+// first group
+Group1 {
+  Node1 [color: red]
+  Node2 [label: node2]
+}
+Group2 {
+  Node1 [color: red], Node2 [label: node2]
+}
+
+---
+(source_file
+  (heading)
+  (comment)
+  (stmt_list
+    (stmt
+     (directive_stmt
+      (direction)))
+    (comment)
+    (stmt
+      (group_stmt
+        (identifier)
+        (group_block
+          (group_item
+            (node
+              (identifier)
+              (node_properties
+                (property (color (color_name)))
+              )
+            )
+          )
+          (group_item
+            (node
+              (identifier)
+              (node_properties
+                (property (identifier))
+              )
+            )
+          )
+        )
+      ))
+    (stmt
+      (group_stmt
+        (identifier)
+        (group_block
+          (group_item
+            (node
+              (identifier)
+              (node_properties
+                (property (color (color_name)))
+              )
+            )
+          )
+          (group_item
+            (node
+              (identifier)
+              (node_properties
+                (property (identifier))
+              )
+            )
+          )
+        )
+      ))
+  )
+)

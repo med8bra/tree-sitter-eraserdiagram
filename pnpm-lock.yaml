@@ -1,0 +1,27 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  nan:
+    specifier: ^2.19.0
+    version: 2.19.0
+
+devDependencies:
+  tree-sitter-cli:
+    specifier: ^0.22.2
+    version: 0.22.2
+
+packages:
+
+  /nan@2.19.0:
+    resolution: {integrity: sha512-nO1xXxfh/RWNxfd/XPfbIfFk5vgLsAxUR9y5O0cHMJu/AW9U95JLXqthYHjEp+8gQ5p96K9jUp8nbVOxCdRbtw==}
+    dev: false
+
+  /tree-sitter-cli@0.22.2:
+    resolution: {integrity: sha512-ecqccEp27XMFXgjLMEEU71vK9JCWAC7fqSTTxcs5P1tnEnaaf4GkHz/wfo4lJ9l3rfxcTDPxN84tHAoitIQqdA==}
+    hasBin: true
+    requiresBuild: true
+    dev: true

@@ -1,0 +1,52 @@
+==================
+Nodes
+==================
+flowchart-diagram
+
+Node1 [shape: oval, color: green, icon: zoom-in]
+Node2 [shape: star, color: green]
+Node3 [shape: star]
+
+---
+
+(source_file
+  (heading)
+  (stmt_list
+    (stmt
+      (node_stmt
+        (node
+          (identifier)
+          (node_properties
+            (property
+              (shape))
+            (property
+              (color (color_name)))
+            (property
+              (identifier))
+          )
+        )
+      ))
+    (stmt
+      (node_stmt
+        (node
+          (identifier)
+          (node_properties
+            (property
+              (shape))
+            (property
+              (color (color_name)))
+          )
+        )
+      ))
+    (stmt
+      (node_stmt
+        (node
+          (identifier)
+          (node_properties
+            (property
+              (shape))
+          )
+        )
+      ))
+  )
+)

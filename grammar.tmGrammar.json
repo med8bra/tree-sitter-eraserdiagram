@@ -1,0 +1,70 @@
+{
+  "name": "Eraser Diagram",
+  "scopeName": "source.eraserdiagram",
+  "patterns": [
+    {
+      "match": "^(sequence-diagram|entity-relationship-diagram|cloud-architecture-diagram|flowchart-diagram)",
+      "name": "markup.heading.eraserdiagram"
+    },
+    {
+      "match": "^(title|direction)",
+      "name": "keyword.control.eraserdiagram"
+    },
+    {
+      "match": "//.*",
+      "name": "comment.line.eraserdiagram"
+    },
+    {
+      "begin": "\\[",
+      "end": "\\]",
+      "name": "keyword.operator.eraserdiagram",
+      "patterns": [
+        {
+          "match": "\\b(icon|color|label|shape)\\b(?=:)",
+          "name": "entity.keyword.eraserdiagram"
+        },
+        {
+          "match": "(?<=: )\\b[\\w\\- ]+\\b",
+          "name": "string.variable.parameter.eraserdiagram"
+        }
+      ]
+    },
+    {
+      "match": "\\b[\\w -]+(?=\\s*(<|-|>|,))|(?<=\\s*(<|-|>|,))\\s*[\\w -]+\\b$",
+      "name": "entity.name.function.eraserdiagram"
+    },
+
+    {
+      "match": "(?<=^\\s*)[\\w -]+\\b",
+      "name": "storage.type.eraserdiagram"
+    },
+    {
+      "match": "\\{",
+      "name": "punctuation.section.block.begin.eraserdiagram"
+    },
+    {
+      "match": "\\}",
+      "name": "punctuation.section.block.end.eraserdiagram"
+    },
+    {
+      "match": ">",
+      "name": "support.type.eraserdiagram"
+    },
+    {
+      "match": "<",
+      "name": "support.type.eraserdiagram"
+    },
+    {
+      "match": "<--",
+      "name": "support.type.dashed.eraserdiagram"
+    },
+    {
+      "match": "-->",
+      "name": "support.type.dashed.eraserdiagram"
+    },
+    {
+      "match": "<>",
+      "name": "support.type.bidirectional.eraserdiagram"
+    }
+  ]
+}
